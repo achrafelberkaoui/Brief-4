@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="step-1">
+            <div> 1 </div>
+            <p>choix de l'evénement</p>
+        </div>
+        <hr>
+        <div class="step-1">
+            <div> 2 </div>
+            <p> Billets </p>
+        </div>
+        <hr>
+        <div class="step-1">
+            <div> 3 </div>
+            <p>Participants</p>
+        </div>
+        <hr>
+        <div class="step-1">
+            <div> 4 </div>
+            <p>Récapitulatif</p>
+        </div>
+        <hr>
+        <div class="step-1">
+            <div> 5 </div>
+            <p>Confirmation</p>
+        </div>
+    </header>
+    <main>
+        <section class="choix">
+            <h1>
+                choix de l'evénement
+            </h1>
+            <div class="filt">
+                <div class="filt-inp">
+                    <label for="ville">Ville</label>
+                    <input type="text" id="ville">
+                </div>
+
+                <div class="filt-inp">
+                    <label for="date">Date</label>
+                    <input type="text" id="date">
+                </div>
+                <div class="filt-inp">
+                    <label for="cate">Catégorie</label>
+                    <input type="text" id="cate">
+                </div>
+            </div>
+        </section>
+
+        <section class="evenem">
+            <article class="evenem-choix">
+                <h2>Concert Jazz</h2>
+                <ul>
+                    <li class="date-even">2024 - 02 - 15</li>
+                    <li class="ville-even">Paris</li>
+                    <li class="place-even">120 Places restantés</li>
+                </ul>
+                <div class="eve-prix">
+                    <h3>38€</h3>
+                    <button>Réserver</button>
+                </div>
+            </article>
+            <article class="evenem-choix">
+                <h2>Conférence Tech</h2>
+                <ul>
+                    <li class="date-even">2024 - 02 - 20</li>
+                    <li class="ville-even">Lyon</li>
+                    <li class="place-even">200 Places restantés</li>
+                </ul>
+                <div class="eve-prix">
+                    <h3>50€</h3>
+                    <button>Réserver</button>
+                </div>
+            </article>
+            <article class="evenem-choix">
+                <h2>Fastival Art</h2>
+                <ul>
+                    <li class="date-even">2024 - 03 - 01</li>
+                    <li class="ville-even">Marseille</li>
+                    <li class="place-even">80 Places restantés</li>
+                </ul>
+                <div class="eve-prix">
+                    <h3>45€</h3>
+                    <button>Réserver</button>
+                </div>
+            </article>
+            <article class="evenem-choix">
+                <h2>Théâtre Classique</h2>
+                <ul>
+                    <li class="date-even">2024 - 02 - 25</li>
+                    <li class="ville-even">Paris</li>
+                    <li class="place-even">150 Places restantés</li>
+                </ul>
+                <div class="eve-prix">
+                    <h3>30€</h3>
+                    <button>Réserver</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <button class="btn-suiv"> suivant </button>
+    </footer>
+
+
+</body>
+
+</html>
