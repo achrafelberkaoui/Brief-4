@@ -58,8 +58,8 @@
         </section>
 
         <section class="evenem">
-            <article class="evenem-choix">
-                <h2>Concert Jazz</h2>
+            <article class="evenem-choix" id="ev-choix">
+                <h2 id="color">Concert Jazz</h2>
                 <ul>
                     <li class="date-even">2024 - 02 - 15</li>
                     <li class="ville-even">Paris</li>
@@ -67,10 +67,10 @@
                 </ul>
                 <div class="eve-prix">
                     <h3>38€</h3>
-                    <button>Réserver</button>
+                    <button onclick="affichage()">Réserver</button>
                 </div>
             </article>
-            <article class="evenem-choix">
+            <article class="evenem-choix" id="ev-choix2">
                 <h2>Conférence Tech</h2>
                 <ul>
                     <li class="date-even">2024 - 02 - 20</li>
@@ -79,10 +79,10 @@
                 </ul>
                 <div class="eve-prix">
                     <h3>50€</h3>
-                    <button>Réserver</button>
+                    <button onclick="affichage()">Réserver</button>
                 </div>
             </article>
-            <article class="evenem-choix">
+            <article class="evenem-choix" >
                 <h2>Fastival Art</h2>
                 <ul>
                     <li class="date-even">2024 - 03 - 01</li>
@@ -91,10 +91,10 @@
                 </ul>
                 <div class="eve-prix">
                     <h3>45€</h3>
-                    <button>Réserver</button>
+                    <button onclick=rese() >Réserver</button>
                 </div>
             </article>
-            <article class="evenem-choix">
+            <article class="evenem-choix" >
                 <h2>Théâtre Classique</h2>
                 <ul>
                     <li class="date-even">2024 - 02 - 25</li>
@@ -103,7 +103,7 @@
                 </ul>
                 <div class="eve-prix">
                     <h3>30€</h3>
-                    <button>Réserver</button>
+                    <button onclick=rese()>Réserver</button>
                 </div>
             </article>
         </section>
@@ -112,7 +112,8 @@
         <button class="btn-suiv"> suivant </button>
     </footer>
 
-
+<script src="java.js">
+</script>
 </body>
 
 </html>
