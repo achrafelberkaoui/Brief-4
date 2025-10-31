@@ -70,7 +70,7 @@ ul {
     margin: 10px;
     padding: 5px;
     border-radius: 10px;
-    background-image: linear-gradient( rgb(0, 0, 0) , rgb(115, 144, 237));
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(115, 144, 237));
 }
 
 .selected {
@@ -80,7 +80,7 @@ ul {
 
 
 
-h2{
+h2 {
     color: white;
 }
 
@@ -102,9 +102,10 @@ h2{
     border-color: rgb(255, 255, 255);
 }
 
-footer{
+footer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+
 }
 
 .btn-suiv {
@@ -121,26 +122,48 @@ footer{
     border-color: rgb(255, 255, 255);
 }
 
-.ville-even::marker{
+.ville-even::marker {
     content: "📍 ";
 
 }
 
-.date-even::marker{
+.date-even::marker {
     content: "📅 ";
 
 }
 
-.place-even::marker{
+.place-even::marker {
     content: "👥 ";
 
 }
 
-#page2{
+#page2 {
     display: none;
 }
+#precedent{
+    display: none;
+    
+}
+
+.btn-prec{
+    width: 20vh;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(251, 249, 252);
+    border-color: rgb(43, 9, 165);
+}
+
+.child-nv{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
 @media screen and (min-width : 600px) {
-    header{
+    header {
         display: flex;
         justify-content: space-evenly;
         border: 1px solid;
@@ -149,7 +172,8 @@ footer{
         margin: 10px 10px;
 
     }
-    main{
+
+    main {
         border: 1px solid;
 
         padding: 10px;
@@ -157,33 +181,35 @@ footer{
         margin: 10px 10px;
     }
 
-    .step-1{
+    .step-1 {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    h1{
-         align-self: self-start;
-         margin-left: 10px;
+
+    h1 {
+        align-self: self-start;
+        margin-left: 10px;
     }
 
-    hr{
+    hr {
         rotate: 90deg;
     }
 
-    .evenem-choix{
+    .evenem-choix {
         width: 40%;
         height: 220px;
         gap: 10px;
         padding: 0px 10px;
     }
 
-    .evenem{
+    .evenem {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
     }
-    .step-1 div{
+
+    .step-1 div {
         width: 30px;
         height: 30px;
         border: 1px solid;
@@ -191,6 +217,15 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .step-va{
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: 40px;
+    position: absolute;
+    display: none;
     }
 
 }
