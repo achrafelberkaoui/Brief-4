@@ -153,10 +153,22 @@ footer {
     border-color: rgb(43, 9, 165);
 }
 
-.child-nv{
-    padding: 5px;
+.counteur{
     display: flex;
+    width: 90%vh;
+    height: 200px;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid;
+    border-radius: 10px;
+    margin: 6px;
+
+}
+
+#pluss , #minnus{
+    padding: 20px;
+    border-radius: 5px;
 }
 
 

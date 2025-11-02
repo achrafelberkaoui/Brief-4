@@ -66,9 +66,6 @@ min.addEventListener('click', function(){
     count.textContent = cnt;
         }
 
-
-
-
 })
 
 
