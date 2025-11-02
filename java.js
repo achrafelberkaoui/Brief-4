@@ -10,7 +10,13 @@ const images = document.querySelectorAll('.step-va');
 const plus = document.getElementById('pluss');
 const min = document.getElementById('minnus');
 const count = document.getElementById('counter');
+const resultt = document.getElementById('result');
+let price = null;
 let selecdiv = null;
+let prix = null;
+let cnt = 1;
+
+
 for (let btn of btnres) {
 
     btn.addEventListener('click', function () {
@@ -20,6 +26,7 @@ for (let btn of btnres) {
         const parenres = btn.parentElement.parentElement;
         parenres.classList.add('selected');
         selecdiv = parenres.cloneNode(true);
+        price = parenres.children[2].children[0].textContent;
     })
 }
 
@@ -29,20 +36,22 @@ nex.addEventListener('click', function () {
     if (selecdiv) {
         page1.style.display = 'none';
         page2.style.display = 'block';
+        pre.style.display = 'block';
         for(let i = 0; i<5; i++){
         images[i].style.display = "block";
 
         }
         childNv.appendChild(selecdiv);
+        prix = Number(price);
+        resultt.textContent = prix * cnt;
+        console.log(prix);
+
+
     } else {
         alert('veuillez Choisissez un eve !');
     }
-    if (!page1) {
-        pre.style.display = 'none';
-    }
-    else {
-        pre.style.display = 'block';
-    }
+
+    
 })
 
 
@@ -50,8 +59,9 @@ pre.addEventListener('click', function () {
 
     page2.style.display = 'none';
     page1.style.display = 'block';
+    pre.style.display = 'none';
 })
-let cnt = 1;
+
 plus.addEventListener('click', function(){
       if(cnt < 10 ){
     cnt++;
@@ -67,6 +77,10 @@ min.addEventListener('click', function(){
         }
 
 })
+
+
+
+
 
 
 

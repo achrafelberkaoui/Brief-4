@@ -155,20 +155,32 @@ footer {
 
 .counteur{
     display: flex;
+    flex-direction: column;
     width: 90%vh;
     height: 200px;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
+    align-items: flex-start;
+    
     border: 2px solid;
     border-radius: 10px;
     margin: 6px;
+    padding: 20px;
 
 }
 
 #pluss , #minnus{
     padding: 20px;
     border-radius: 5px;
+}
+
+#result{
+    font-size: 30px;
+}
+
+.total-prix{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
